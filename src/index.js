@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './components/main.css';
 
 import AppHeader from "./components/app-header";
-import SearchPenal from "./components/search-penal";
+import SearchPanel from "./components/search-panel";
 import TodoList from "./components/todo-list";
 
 
@@ -13,9 +14,9 @@ const App = () => {
         { label: 'Have a lunch', important: false, id: 3 }
     ];
     return (
-        <div>
+        <div className="main">
             <AppHeader/>
-            <SearchPenal/>
+            <SearchPanel/>
             <TodoList todos={todoData}/>
         </div>
     );
