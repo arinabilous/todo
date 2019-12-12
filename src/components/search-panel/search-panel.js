@@ -1,6 +1,6 @@
 import React from "react";
 import './search-panel.css';
-import ItemSatusFilter from './item-status-filter';
+import ItemSatusFilter from '../item-status-filter';
 
 const SearchPanel = () => {
     const searchText = 'Type here to search';
